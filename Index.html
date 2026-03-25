@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucky Draw Presentation App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="appRoot" class="preview-mode">
+    <div class="app-shell">
+      <aside class="setup-panel">
+        <div>
+          <h1 class="panel-title">Lucky Draw Control</h1>
+          <p class="panel-subtitle">
+            Load and lock your attendee list, then switch to presentation mode for the live draw.
+          </p>
+        </div>
+
+        <section class="section">
+          <h2>Attendees</h2>
+          <label for="nameList">Paste one name per line</label>
+          <textarea
+            id="nameList"
+            placeholder="Grace&#10;John&#10;Aom&#10;..."
+            spellcheck="false"
+          ></textarea>
+          <button id="loadLockButton" class="btn-primary" type="button">
+            Load &amp; Lock Names
+          </button>
+        </section>
+
+        <section class="section">
+          <h2>Draw Settings</h2>
+          <label for="randomNumber">Number of winners per draw</label>
+          <select id="randomNumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+
+          <div class="toggle-row">
+            <span>Remove winners after draw</span>
+            <label class="switch">
+              <input type="checkbox" id="removeAfterDraw" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </section>
+
+        <section class="section meta-grid">
+          <div class="meta-card">
+            <span class="meta-label">Attendees loaded</span>
+            <span class="meta-value" id="attendeesCount">0</span>
+          </div>
+
+          <div class="meta-card">
+            <span class="meta-label">List status</span>
+            <span class="meta-value" id="lockStatus">Open</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Session Controls</h2>
+          <button id="presentButton" class="btn-dark" type="button">
+            Enter Presentation Mode
+          </button>
+
+          <div class="secondary-actions">
+            <button id="unlockButton" class="btn-light" type="button">
+              Unlock List
+            </button>
+            <button id="resetButton" class="btn-danger" type="button">
+              Reset Session
+            </button>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Status</h2>
+          <div id="statusBox" class="status-box">
+            Waiting for attendee list.
+          </div>
+        </section>
+      </aside>
+
+      <main class="presentation-stage">
+        <div class="stage-overlay"></div>
+
+        <div class="stage-center">
+          <div class="result-card" id="resultCard">
+            <div class="result-inner" id="resultBox">
+              <div class="result-empty"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="push-button-wrap">
+          <div class="push-button" id="pushButton" role="button" tabindex="0" aria-label="Draw">
+            <div class="push-button-core"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div class="confetti-layer" id="confettiLayer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

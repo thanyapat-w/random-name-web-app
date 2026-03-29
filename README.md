@@ -16,3 +16,6 @@ A simple web app for random name selection.
 - HTML
 - CSS
 - JavaScript
+
+## 👩‍💻 Author
+- Thanyapat W.

@@ -270,7 +270,7 @@ button:disabled {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url("2026-Test.jpg");
+  background-image: url("background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

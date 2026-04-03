@@ -1,18 +1,36 @@
 # 🎯 Random Name Web App
+A simple and interactive web application for randomly selecting names.
+Perfect for classroom activities, lucky draws, or team games.
 
-A simple web app for random name selection.
+## 🌐 Live Demo
+https://thanyapat-w.github.io/random-name-web-app/
 
 ## ✨ Features
-- Randomly select names
-- Easy to use interface
-- Built with HTML, CSS, JavaScript
+* 🎲 Random name selection
+* 🎨 Custom background design
+* ⚡ Simple and user-friendly interface
+* 📱 Responsive layout
+
+## 🛠 Technologies Used
+* HTML
+* CSS
+* JavaScript
 
 ## 🚀 How to Use
 1. Open the web app
-2. Enter names
-3. Click start to random
+2. Enter a list of names
+3. Click the start button
+4. Let the system randomly select a name
 
-## 🛠 Technologies
-- HTML
-- CSS
-- JavaScript
+## 📸 Screenshot
+![Screenshot](setting.png)
+![Screenshot](present_result.png)
+
+## 📚 What I Learned
+* Git & GitHub workflow (branch, commit, pull request)
+* Deploying a website using GitHub Pages
+* Managing project structure and assets
+* Improving UI with CSS
+
+## 👩‍💻 Author
+Thanyapat (Grace) W.
